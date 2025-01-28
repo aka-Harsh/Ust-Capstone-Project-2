@@ -1,0 +1,139 @@
+.login-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  margin: 0;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.login-container.light {
+  background-color: #f0f2f5;
+  color: #1a1a1a;
+}
+
+.login-container.dark {
+  background-color: #1a1a1a;
+  color: #f0f2f5;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+  padding: 10px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: inherit;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4a90e2;
+}
+
+.dark input {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(45deg, #4a90e2, #63b3ed);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: #ff4d4d;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #4a90e2, #63b3ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.dark h2 {
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 95%;
+    padding: 2rem;
+  }
+  
+  input {
+    padding: 12px;
+  }
+  
+  .login-button {
+    padding: 12px;
+  }
+}
+
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} 

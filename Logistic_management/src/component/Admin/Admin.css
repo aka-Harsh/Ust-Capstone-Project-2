@@ -1,0 +1,119 @@
+.venue-actions {
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-venue-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-venue-btn:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}
+
+.venue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.venue-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.venue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.venue-header h3 {
+  margin: 0;
+  color: #4a90e2;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.icon-button:hover {
+  color: #4a90e2;
+  transform: scale(1.1);
+}
+
+.icon-button.delete:hover {
+  color: #ff4d4d;
+}
+
+.venue-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status-badge.available {
+  background: #4caf50;
+  color: white;
+}
+
+.status-badge.occupied {
+  background: #ff9800;
+  color: white;
+}
+
+.status-badge.maintenance {
+  background: #f44336;
+  color: white;
+}
+
+/* Dark mode adjustments */
+.dark .venue-card {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .icon-button {
+  color: #999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-main {
+    padding: 1rem;
+  }
+  
+  .venue-grid {
+    grid-template-columns: 1fr;
+  }
+} 
